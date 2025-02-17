@@ -1,8 +1,8 @@
 {
   "$schema": "https://schema.tauri.app/config/2",
-  "productName": "random_questions",
+  "productName": "random questions",
   "version": "0.1.0",
-  "identifier": "com.random_questions.app",
+  "identifier": "com.random-questions.app",
   "build": {
     "beforeDevCommand": "bun run dev",
     "devUrl": "http://localhost:1420",
