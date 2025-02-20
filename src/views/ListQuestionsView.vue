@@ -57,8 +57,8 @@ async function exportQuestions() {
           v-for="el of getCurrentViewQuestion"
           class="question">
         <ItemQuestionsList
-            :exclamation="el.question"
-            :question="el.answer"
+            :answer="el.answer"
+            :question="el.question"
             :key="el.id"
             @updateQuestion="(new_q) => questionsStore.changeQuestion(el.id, new_q, undefined)"
             @updateExclamation="(new_e) => questionsStore.changeQuestion(el.id, undefined, new_e)"

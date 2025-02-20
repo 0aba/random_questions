@@ -6,7 +6,7 @@ import { ref } from "vue";
 
 const props = defineProps({
   question: { type: String, required: true },
-  exclamation: { type: String, required: true }
+  answer: { type: String, required: true }
 });
 const emit = defineEmits<{
   updateQuestion: [string],
@@ -15,7 +15,7 @@ const emit = defineEmits<{
 }>();
 
 const question = ref(props.question);
-const exclamation = ref(props.exclamation);
+const answer = ref(props.answer);
 </script>
 
 <template>
@@ -33,8 +33,8 @@ const exclamation = ref(props.exclamation);
         <img :src="exclamationMark" alt="Exclamation Mark" class="img-svg" />
         <input
             type="text"
-            v-model="exclamation"
-            @input="emit('updateExclamation', exclamation)"
+            v-model="answer"
+            @input="emit('updateExclamation', answer)"
         />
       </div>
     </div>
